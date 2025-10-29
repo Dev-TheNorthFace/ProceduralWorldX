@@ -1,0 +1,30 @@
+structures:
+  village:
+    enabled: true
+    rarity: 0.005
+    min-size: 5
+    max-size: 15
+    buildings:
+      - {type: "house", probability: 0.6, size: [5, 5, 4]}
+      - {type: "well", probability: 0.1, size: [3, 3, 4]}
+      - {type: "farm", probability: 0.3, size: [7, 7, 1]}
+  
+  dungeon:
+    enabled: true
+    rarity: 0.008
+    rooms:
+      min: 3
+      max: 8
+    spawners:
+      - {entity: "zombie", probability: 0.5}
+      - {entity: "skeleton", probability: 0.3}
+      - {entity: "spider", probability: 0.2}
+    loot:
+      - {item: "iron_sword", probability: 0.2}
+      - {item: "gold_ingot", probability: 0.4}
+  
+  ruins:
+    enabled: true
+    rarity: 0.003
+    style: "ancient"
+    blocks: ["mossy_stone_bricks", "cracked_stone_bricks"]

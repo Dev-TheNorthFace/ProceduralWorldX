@@ -1,0 +1,65 @@
+biomes:
+  plains:
+    name: "Plaines"
+    height-range: [60, 75]
+    temperature: 0.8
+    humidity: 0.4
+    color: "#8DB360"
+    blocks:
+      surface: "grass"
+      subsurface: "dirt"
+      filler: "stone"
+    decorations:
+      - {type: "tree", density: 0.01, blocks: ["oak_log", "oak_leaves"]}
+      - {type: "flower", density: 0.05, blocks: ["dandelion", "poppy"]}
+  
+  forest:
+    name: "Forêt"
+    height-range: [65, 85]
+    temperature: 0.7
+    humidity: 0.6
+    color: "#2D5A27"
+    blocks:
+      surface: "grass"
+      subsurface: "dirt"
+      filler: "stone"
+    decorations:
+      - {type: "tree", density: 0.1, blocks: ["oak_log", "oak_leaves"]}
+      - {type: "tree", density: 0.05, blocks: ["birch_log", "birch_leaves"]}
+  
+  desert:
+    name: "Désert"
+    height-range: [62, 70]
+    temperature: 1.0
+    humidity: 0.1
+    color: "#FAF0BE"
+    blocks:
+      surface: "sand"
+      subsurface: "sand"
+      filler: "sandstone"
+    decorations:
+      - {type: "cactus", density: 0.02, blocks: ["cactus"]}
+  
+  mountains:
+    name: "Montagnes"
+    height-range: [80, 130]
+    temperature: 0.3
+    humidity: 0.5
+    color: "#606C76"
+    blocks:
+      surface: "stone"
+      subsurface: "stone"
+      filler: "stone"
+    decorations:
+      - {type: "ore", density: 0.1, blocks: ["coal_ore"]}
+  
+  ocean:
+    name: "Océan"
+    height-range: [45, 62]
+    temperature: 0.5
+    humidity: 1.0
+    color: "#0000FF"
+    blocks:
+      surface: "sand"
+      subsurface: "dirt"
+      filler: "stone"

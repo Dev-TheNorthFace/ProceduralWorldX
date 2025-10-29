@@ -1,0 +1,46 @@
+world-generator:
+  settings:
+    world-name: "procedural_world"
+    seed: "custom_seed_123"
+    sea-level: 62
+    bed-rock-position: 0
+    bed-rock-roof-position: 128
+    total-height: 256
+  
+  algorithms:
+    terrain:
+      type: "perlin"
+      octaves: 4
+      persistence: 0.5
+      scale: 0.01
+      lacunarity: 2.0
+    
+    biome:
+      type: "voronoi"
+      scale: 0.005
+      points: 50
+    
+    cave:
+      type: "perlin"
+      threshold: 0.4
+      scale: 0.03
+  
+  terrain-layers:
+    - {depth: 1, block: "bedrock"}
+    - {depth: 3, block: "stone"}
+    - {depth: 1, block: "dirt"}
+    - {depth: 1, block: "grass"}
+  
+  structures:
+    enabled: true
+    density: 0.01
+    list:
+      - "village"
+      - "dungeon"
+      - "tree"
+      - "ruins"
+  
+  performance:
+    chunk-cache-size: 100
+    async-generation: true
+    memory-limit: "256M"
